@@ -16,7 +16,52 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-img {
+nav {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    background-color: green;
+}
+
+/* The following removes the list style (the list bullet points */
+/* It also removes the blank space (padding) to the surrounding box */
+/* display:flex puts all items in a row instead of a column */
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    display:flex;
+}
+
+nav li {
+    margin: 0 10px;
+    font-size: 30px;
+    background-color: green;
+    color: lightgoldenrodyellow;
+}
+
+nav li:hover {
+    background-color: darkseagreen;
+    color: green;
+}
+
+nav li a {
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+    display:block;
+    padding: 0 10px;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    color: white;
+    display:block;
+    padding: 0 10px;
+}
+
+main section img {
+    width: 500px;
+    height: auto;
     border: 2px solid lightgoldenrodyellow;
     border-radius: 10px;
 }
@@ -31,6 +76,14 @@ span:last-child {
 
 main article {
     display:flex;
+}
+
+#intro {
+    text-align: center;
+}
+
+#blog-text {
+    width: 50%;
 }
 
 #IntroText {
@@ -55,17 +108,11 @@ main article {
 .Ingredients {
     font-size: 12;
     background-color: beige;
-    width: 300px;
     list-style:square;
-    padding-right: 5px;
-    margin-right: 15px;
 }
 
 .ToDo {
     font-size: 18;
     background-color: bisque;
-    width: 300px;
     list-style-type: lower-roman;
-    padding-right: 5px;
-    margin-right: 5px;
 }
