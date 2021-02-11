@@ -76,6 +76,7 @@ span:last-child {
 
 main article {
     display:flex;
+    margin: 0 20px;
 }
 
 #intro {
@@ -84,17 +85,18 @@ main article {
 
 #blog-text {
     width: 50%;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+#blog-text p:first-child {
+    margin-bottom: 50px;
 }
 
 #IntroText {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 50%;
     margin-bottom: 50px;
-}
-
-.SpecialClass {
-    font-style: inherit;
-    color: red;
 }
 
 .Description {
@@ -105,14 +107,23 @@ main article {
     font-size: 32px;
 }
 
-.Ingredients {
-    font-size: 12;
-    background-color: beige;
-    list-style:square;
+.card {
+    background-color: lightgoldenrodyellow;
+    border: 0.5px solid green;
+    border-radius: 5px;
+    padding-bottom: 2px;
 }
 
-.ToDo {
-    font-size: 18;
-    background-color: bisque;
-    list-style-type: lower-roman;
+.card h4 {
+    text-align: center;
+}
+
+.card ul li {
+    font-size: 18px;
+    list-style: square;
+}
+
+.card ol li {
+    font-size: 18px;
+    list-style: lower-roman;
 }
