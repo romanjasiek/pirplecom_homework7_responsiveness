@@ -1,5 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color:darkseagreen;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -16,11 +22,15 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav {
+nav, footer {
     height: 50px;
     line-height: 50px;
     width: 100%;
     background-color: green;
+}
+
+footer p {
+    padding-left: 20px;
 }
 
 /* The following removes the list style (the list bullet points */
@@ -31,6 +41,7 @@ nav ul {
     list-style: none;
     padding-left: 0;
     display:flex;
+    margin-top: 0;
 }
 
 nav li {
@@ -76,7 +87,9 @@ span:last-child {
 
 main article {
     display:flex;
-    margin: 0 20px;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    margin: 20px;
 }
 
 #intro {
@@ -93,25 +106,22 @@ main article {
     margin-bottom: 50px;
 }
 
-#IntroText {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 50%;
-    margin-bottom: 50px;
+#lower-image {
+    text-align: center;
 }
 
-.Description {
-    font-size: 24px;
-}
-
-.Description2 {
-    font-size: 32px;
+#lower-image img {
+    width: 25%;
+    height: auto;
 }
 
 .card {
+    width: 500px;
     background-color: lightgoldenrodyellow;
     border: 0.5px solid green;
     border-radius: 5px;
     padding-bottom: 2px;
+    margin-bottom: 25px;
 }
 
 .card h4 {
