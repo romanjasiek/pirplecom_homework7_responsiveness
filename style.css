@@ -2,11 +2,24 @@
     box-sizing: border-box;
 }
 
-body {
+
+@media screen and (min-width: 751px) {
+    body{
     background-color:darkseagreen;
-    margin: 0;
-    padding: 0;
-}
+    }
+  }
+ 
+ @media screen and (min-width: 401px) and (max-width: 750px) {
+    body{
+    background-color: lavenderblush;
+    }
+ }
+ 
+ @media screen and (max-width: 400px) {
+    body{
+    background-color: lavender;   
+    }
+ }
 
 h1 {
     text-decoration: underline;
