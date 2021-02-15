@@ -2,51 +2,28 @@
     box-sizing: border-box;
 }
 
+p {font-size: 1.5em;}
+
 
 @media screen and (min-width: 751px) {
     body{
+    font-size: 90%;
     background-color:darkseagreen;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
     }
-  }
- 
- @media screen and (min-width: 401px) and (max-width: 750px) {
-    body{
-    background-color: lavenderblush;
-    }
- }
- 
- @media screen and (max-width: 400px) {
-    body{
-    background-color: lavender;   
-    }
- }
 
-h1 {
-    text-decoration: underline;
-    font-weight: bold;
-    padding-bottom: 30px;
-    color: lightgoldenrodyellow;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+    h1 {
+        font-sitze: 2.5em;
+        text-decoration: underline;
+        font-weight: bold;
+        padding-bottom: 10px;
+        color: lightgoldenrodyellow;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
 
-h2 {
-    padding-bottom: 30px;
-    color: lightgoldenrodyellow;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-nav, footer {
-    height: 50px;
-    line-height: 50px;
-    width: 100%;
-    background-color: green;
-}
-
-footer p {
-    padding-left: 20px;
-}
-
-/* The following removes the list style (the list bullet points */
+    /* The following removes the list style (the list bullet points */
 /* It also removes the blank space (padding) to the surrounding box */
 /* display:flex puts all items in a row instead of a column */
 
@@ -58,8 +35,8 @@ nav ul {
 }
 
 nav li {
-    margin: 0 10px;
-    font-size: 30px;
+    margin: 0 5px;
+    font-size: 2.5em;
     background-color: green;
     color: lightgoldenrodyellow;
 }
@@ -73,7 +50,7 @@ nav li a {
     text-decoration: none;
     color: lightgoldenrodyellow;
     display:block;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 nav li a:hover {
@@ -81,6 +58,31 @@ nav li a:hover {
     color: white;
     display:block;
     padding: 0 10px;
+}
+
+.card {
+    width:auto;
+    background-color: lightgoldenrodyellow;
+    border: 0.5px solid green;
+    border-radius: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 25px;
+}
+
+.card h4 {
+    text-align: center;
+}
+
+.card ul li {
+    font-size: 2.5em;
+    list-style: square;
+}
+
+.card ol li {
+    font-size: 2.5em;
+    list-style: decimal;
 }
 
 main section img {
@@ -111,7 +113,6 @@ main article {
 
 #blog-text {
     width: 50%;
-    font-size: 25px;
     margin-right: 20px;
 }
 
@@ -128,11 +129,70 @@ main article {
     height: auto;
 }
 
+}
+ 
+ @media screen and (min-width: 401px) and (max-width: 750px) {
+    body{
+    font-size: 75%;
+    background-color: lavenderblush;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    }
+
+    h1 {
+        font-sitze: 2em;
+        text-decoration: underline;
+        font-weight: bold;
+        padding-bottom: 20px;
+        color: lightgoldenrodyellow;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+          /* The following removes the list style (the list bullet points */
+/* It also removes the blank space (padding) to the surrounding box */
+/* display:flex puts all items in a row instead of a column */
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    display:flex;
+    margin-top: 0;
+}
+
+nav li {
+    margin: 0 5px;
+    font-size: 2em;
+    background-color: green;
+    color: lightgoldenrodyellow;
+}
+
+nav li:hover {
+    background-color: darkseagreen;
+    color: green;
+}
+
+nav li a {
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+    display:block;
+    padding: 0 5px;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    color: white;
+    display:block;
+    padding: 0 10px;
+}
+
 .card {
-    width: 500px;
+    width:auto;
     background-color: lightgoldenrodyellow;
     border: 0.5px solid green;
     border-radius: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
     padding-bottom: 2px;
     margin-bottom: 25px;
 }
@@ -142,11 +202,200 @@ main article {
 }
 
 .card ul li {
-    font-size: 18px;
+    font-size: 2em;
     list-style: square;
 }
 
 .card ol li {
-    font-size: 18px;
-    list-style: lower-roman;
+    font-size: 2em;
+    list-style: decimal;
+}
+
+main section img {
+    width: 500px;
+    height: auto;
+    border: 2px solid lightgoldenrodyellow;
+    border-radius: 10px;
+}
+
+p span {
+    font-style: italic;
+}
+
+span:last-child {
+    text-decoration: underline;
+}
+
+main article {
+    display:flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    margin: 20px;
+}
+
+#intro {
+    text-align: center;
+}
+
+#blog-text {
+    width: 50%;
+    margin-right: 20px;
+}
+
+#blog-text p:first-child {
+    margin-bottom: 50px;
+}
+
+#lower-image {
+    text-align: center;
+}
+
+#lower-image img {
+    width: 25%;
+    height: auto;
+}
+
+ }
+ 
+ @media screen and (max-width: 400px) {
+    body{
+    font-size: 50%;
+    background-color: lavender;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    }
+
+    h1 {
+        font-sitze: 1.5em;
+        text-decoration: underline;
+        font-weight: bold;
+        padding-bottom: 10px;
+        color: lightgoldenrodyellow;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      /* The following removes the list style (the list bullet points */
+/* It also removes the blank space (padding) to the surrounding box */
+/* display:flex puts all items in a row instead of a column */
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    display:flex;
+    margin-top: 0;
+}
+
+nav li {
+    margin: 0 5px;
+    font-size: 1.5em;
+    background-color: green;
+    color: lightgoldenrodyellow;
+}
+
+nav li:hover {
+    background-color: darkseagreen;
+    color: green;
+}
+
+nav li a {
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+    display:block;
+    padding: 0 10px;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    color: white;
+    display:block;
+    padding: 0 5px;
+}
+
+.card {
+    width:auto;
+    background-color: lightgoldenrodyellow;
+    border: 0.5px solid green;
+    border-radius: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 25px;
+}
+
+.card h4 {
+    text-align: center;
+}
+
+.card ul li {
+    font-size: 1.5em;
+    list-style: square;
+}
+
+.card ol li {
+    font-size: 1.5em;
+    list-style:decimal;
+}
+
+main section img {
+    width: 300px;
+    height: auto;
+    border: 2px solid lightgoldenrodyellow;
+    border-radius: 10px;
+}
+
+p span {
+    font-style: italic;
+}
+
+span:last-child {
+    text-decoration: underline;
+}
+
+main article {
+    display:flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    margin: 20px;
+}
+
+#intro {
+    text-align: center;
+}
+
+#blog-text {
+    width: 50%;
+    margin-right: 20px;
+}
+
+#blog-text p:first-child {
+    margin-bottom: 50px;
+}
+
+#lower-image {
+    text-align: center;
+}
+
+#lower-image img {
+    width: 300px;
+    height: auto;
+}
+
+}
+
+h2 {
+    padding-bottom: 30px;
+    color: lightgoldenrodyellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav, footer {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    background-color: green;
+}
+
+footer p {
+    padding-left: 20px;
 }
