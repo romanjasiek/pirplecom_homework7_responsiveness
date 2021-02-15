@@ -65,10 +65,12 @@ nav li a:hover {
     background-color: lightgoldenrodyellow;
     border: 0.5px solid green;
     border-radius: 5px;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-bottom: 2px;
     margin-bottom: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .card h4 {
@@ -83,10 +85,11 @@ nav li a:hover {
 .card ol li {
     font-size: 2.5em;
     list-style: decimal;
+    list-style-position: inside;
 }
 
 main section img {
-    width: 500px;
+    width: 750px;
     height: auto;
     border: 2px solid lightgoldenrodyellow;
     border-radius: 10px;
@@ -129,12 +132,19 @@ main article {
     height: auto;
 }
 
+h2 {
+    padding-bottom: 30px;
+    color: lightgoldenrodyellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 }
  
  @media screen and (min-width: 401px) and (max-width: 750px) {
     body{
+    color: lightgoldenrodyellow;
     font-size: 75%;
-    background-color: lavenderblush;
+    background-color: darkolivegreen;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -188,6 +198,7 @@ nav li a:hover {
 
 .card {
     width:auto;
+    color: black;
     background-color: lightgoldenrodyellow;
     border: 0.5px solid green;
     border-radius: 5px;
@@ -255,12 +266,19 @@ main article {
     height: auto;
 }
 
+h2 {
+    padding-bottom: 20px;
+    color: lightgoldenrodyellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
  }
  
  @media screen and (max-width: 400px) {
     body{
     font-size: 50%;
-    background-color: lavender;
+    color: lightgoldenrodyellow;
+    background-color: darkgreen;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -314,6 +332,7 @@ nav li a:hover {
 
 .card {
     width:auto;
+    color: black;
     background-color: lightgoldenrodyellow;
     border: 0.5px solid green;
     border-radius: 5px;
@@ -381,12 +400,12 @@ main article {
     height: auto;
 }
 
-}
-
 h2 {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     color: lightgoldenrodyellow;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 }
 
 nav, footer {
